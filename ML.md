@@ -111,3 +111,175 @@ Machine Learning allows systems to:
 - Identify patterns
 - Make predictions
 - Improve over time
+
+# 🔢 Basic Calculations Used in Machine Learning
+
+Machine Learning internally uses mathematics to learn patterns.
+
+---
+
+## 1. Mean (Average)
+
+Data no average value.
+
+### Formula
+
+Mean = (Sum of all values) / (Total values)
+
+### Example
+
+Marks: 50, 60, 70  
+
+Mean = (50 + 60 + 70) / 3  
+Mean = 60  
+
+Used for:
+- Understanding data
+- Filling missing values
+- Normalization
+
+---
+
+## 2. Variance
+
+Measures how spread out the data is from the mean.
+
+### Formula
+
+Variance = Σ(x - mean)² / n
+
+High variance → data widely spread  
+Low variance → data close to mean  
+
+---
+
+## 3. Standard Deviation
+
+Square root of variance.
+
+Standard Deviation = √Variance
+
+Used in:
+- Feature scaling
+- Data normalization
+
+---
+
+## 4. Linear Regression Basic Formula
+
+y = mx + c
+
+Where:
+- y = prediction  
+- x = input  
+- m = slope  
+- c = intercept  
+
+### Example
+
+m = 2  
+c = 5  
+x = 3  
+
+y = 2(3) + 5  
+y = 11  
+
+---
+
+## 5. Loss Function (Error Calculation)
+
+Measures how wrong the model is.
+
+### Mean Squared Error (MSE)
+
+MSE = Σ(Actual - Predicted)² / n
+
+Example:
+
+Actual = 10  
+Predicted = 8  
+
+Error = (10 - 8)²  
+Error = 4  
+
+Goal: Minimize the loss.
+
+---
+
+## 6. Accuracy (Classification)
+
+Accuracy = Correct Predictions / Total Predictions
+
+Example:
+
+90 correct out of 100  
+
+Accuracy = 90%
+
+---
+
+## 7. Gradient Descent (Basic Idea)
+
+Gradient Descent is an optimization algorithm used to minimize the loss function.
+
+Goal: Reduce error step by step.
+
+---
+
+### Why Needed?
+
+When model makes predictions, it calculates error using a loss function.  
+Gradient Descent helps to adjust model parameters (m and c in linear regression) to reduce that error.
+
+---
+
+### Basic Update Formula
+
+m = m - learning_rate × derivative_of_loss  
+c = c - learning_rate × derivative_of_loss  
+
+Where:
+- m = slope  
+- c = intercept  
+- learning_rate = small value (example: 0.01)  
+- derivative = slope of error curve  
+
+---
+
+### Simple Understanding
+
+1. Calculate prediction  
+2. Calculate error  
+3. Find slope (derivative)  
+4. Update parameters  
+5. Repeat until error becomes small  
+
+---
+
+### Visual Idea
+
+Imagine you are standing on a mountain and want to reach the bottom.
+
+- Look at slope  
+- Take small step downward  
+- Repeat  
+
+Eventually you reach the minimum point.
+
+---
+
+### Learning Rate
+
+Learning rate controls step size.
+
+- Too small → Slow learning  
+- Too large → May overshoot  
+- Perfect value → Faster convergence  
+
+---
+
+### Goal of Gradient Descent
+
+Minimize Loss Function  
+Find best values of m and c  
+Improve prediction accuracy
