@@ -283,3 +283,77 @@ Learning rate controls step size.
 Minimize Loss Function  
 Find best values of m and c  
 Improve prediction accuracy
+
+
+# 📊 Confusion Matrix (Classification Evaluation)
+
+A **Confusion Matrix** is used to evaluate the performance of a classification model.
+
+It shows how many predictions were:
+
+- Correct
+- Incorrect
+- True
+- False
+
+---
+
+## Structure of Confusion Matrix
+
+|                | Predicted Positive | Predicted Negative |
+|----------------|-------------------|-------------------|
+| **Actual Positive** | True Positive (TP)  | False Negative (FN) |
+| **Actual Negative** | False Positive (FP) | True Negative (TN)  |
+
+---
+
+## Terms Explained
+
+### 1️⃣ True Positive (TP)
+Model predicted **Yes**, and actual is **Yes**.
+
+### 2️⃣ True Negative (TN)
+Model predicted **No**, and actual is **No**.
+
+### 3️⃣ False Positive (FP)
+Model predicted **Yes**, but actual is **No**.  
+(Also called Type 1 Error)
+
+### 4️⃣ False Negative (FN)
+Model predicted **No**, but actual is **Yes**.  
+(Also called Type 2 Error)
+
+---
+
+# 📈 Important Metrics from Confusion Matrix
+
+## 1. Accuracy
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+---
+
+## 2. Precision
+Precision = TP / (TP + FP)
+
+Meaning: Out of all predicted positive cases, how many were actually correct?
+
+---
+
+## 3. Recall (Sensitivity)
+Recall = TP / (TP + FN)
+
+Meaning: Out of all actual positive cases, how many were correctly predicted?
+
+---
+
+## 4. F1 Score
+F1 Score = 2 × (Precision × Recall) / (Precision + Recall)
+
+Used when data is imbalanced.
+
+---
+
+## 5. Specificity
+Specificity = TN / (TN + FP)
+
+Measures how well the model identifies actual negative cases.
